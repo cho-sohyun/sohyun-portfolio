@@ -4,7 +4,7 @@ export interface SkillData {
   description: string;
 }
 
-export const SkillContents: SkillData[] = [
+export const SKILL_DATA: SkillData[] = [
   {
     name: "HTML",
     level: 80,

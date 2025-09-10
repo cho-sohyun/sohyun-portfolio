@@ -1,0 +1,28 @@
+import { motion } from "framer-motion";
+
+const Footer = () => {
+  return (
+    <footer className="relative w-full h-screen flex flex-col justify-center items-center bg-gray-100 overflow-hidden">
+      <motion.h3
+        className="text-5xl font-extrabold text-gray-800 mb-4"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
+        Thank You for Visiting!
+      </motion.h3>
+
+      <motion.p
+        className="text-lg text-gray-600 text-center max-w-xl"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
+      >
+        프론트엔드 개발자로서 문제 해결과 창의적 구현에 최선을 다하며, <br />
+        팀과 함께 성장하는 개발자가 되겠습니다.
+      </motion.p>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -2,6 +2,10 @@
 
 import { NAV_LISTS } from "@/constants/navigation";
 
+// 블로그 깃헙 링크 추가
+// 네비게이션 추가
+// 클릭시 해당 섹션으로 스크롤 이동
+
 const Header = () => {
   const filteredNav = NAV_LISTS.filter((nav) => nav.id !== "intro");
 

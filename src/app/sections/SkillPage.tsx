@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { SkillContents, SkillData } from "@/constants/skill";
+import { SKILL_DATA, SkillData } from "@/constants/skill";
 
 const SkillPage = () => {
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -108,7 +108,7 @@ const SkillPage = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2 }}
         >
-          {SkillContents.slice(0, 5).map((skill, index) =>
+          {SKILL_DATA.slice(0, 5).map((skill, index) =>
             renderProgressBar(skill, index)
           )}
         </motion.div>
@@ -120,7 +120,7 @@ const SkillPage = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
         >
-          {SkillContents.slice(5).map((skill, index) =>
+          {SKILL_DATA.slice(5).map((skill, index) =>
             renderProgressBar(skill, index + 5)
           )}
         </motion.div>

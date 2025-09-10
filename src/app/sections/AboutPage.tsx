@@ -7,9 +7,10 @@ const About = () => {
     <div className="flex flex-col items-center mt-20 min-h-screen ">
       {/* 상단 자기소개 */}
       <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
       >
         <h3
           className="md:pl-2 text-sm font-light text-gray-500"

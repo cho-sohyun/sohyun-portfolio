@@ -2,9 +2,11 @@
 
 import Intro from "./sections/Intro";
 import About from "./sections/AboutPage";
-import { motion } from "framer-motion";
 import SkillPage from "./sections/SkillPage";
 import CareerPage from "./sections/CareerPage";
+import ProjectPage from "./sections/ProjectPage";
+import Footer from "./components/Footer";
+import BlogPage from "./sections/BlogPage";
 
 export default function Home() {
   return (
@@ -13,22 +15,24 @@ export default function Home() {
         <Intro />
       </section>
 
-      <section className="w-full ">
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="min-h-screen flex flex-col"
-        >
-          <About />
-        </motion.div>
+      <section>
+        <About />
       </section>
-      <section className="min-h-screen flex flex-col">
+      <section>
         <SkillPage />
       </section>
-      <section className="min-h-screen flex flex-col">
+      <section>
         <CareerPage />
+      </section>
+      <section>
+        <ProjectPage />
+      </section>
+      <section>
+        <BlogPage />
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </main>
   );
