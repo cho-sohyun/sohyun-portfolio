@@ -14,6 +14,9 @@ export interface ProjectData {
   description: string;
   image: StaticImageData;
   detail: string;
+  notionUrl: string;
+  githubUrl?: string;
+  blogUrl?: string;
 }
 
 export const PROJECT_DATA: ProjectData[] = [
@@ -24,6 +27,11 @@ export const PROJECT_DATA: ProjectData[] = [
       "사용자 맞춤형 게시글 추천 패션 SNS입니다. 이 프로젝트는 옷으로 누구나 맞이했던 온갖 경험들에서 시작하여, 고민을 해결하기 위해 기획하게 되었습니다.",
     image: chalkak,
     detail: "상세보기",
+    notionUrl:
+      "https://quiet-roof-cf4.notion.site/ebd/2782eaac60aa801cb95ed62f0e84346a?v=2782eaac60aa81ff8411000c1ad1a4d6",
+    githubUrl: "https://github.com/ZB-ChalKak",
+    blogUrl:
+      "https://velog.io/@whthgus77/%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%B0%B0%EC%B9%B5-%ED%9A%8C%EA%B3%A0%EB%A1%9D",
   },
 
   {
@@ -33,6 +41,8 @@ export const PROJECT_DATA: ProjectData[] = [
       "평소 자신이 관심을 가지고 좋아하는 영상을 검색하여 자막과 함께 영어 공부를 할 수 있는 사이트를 구성했습니다.",
     image: subtube,
     detail: "상세보기",
+    notionUrl:
+      "https://www.notion.so/Subtube-YouTube-8d3e2f3e0f5b4e6f9a1f0e2e2c3b4c5e",
   },
 
   {
@@ -42,6 +52,8 @@ export const PROJECT_DATA: ProjectData[] = [
       "가장 인기있는 영화 리스트, 가장 평점 좋은 영화 리스트, 상영 예정작 리스트를 볼 수 있는 사이트 입니다.",
     image: netflix,
     detail: "상세보기",
+    notionUrl:
+      "https://www.notion.so/Netflix-Clone-Project-6b1f0e3e2f4b4e6f9a1f0e2e2c3b4c5e",
   },
   {
     id: 4,
@@ -50,6 +62,8 @@ export const PROJECT_DATA: ProjectData[] = [
       "웹 쇼핑몰을 꼭 한번 만들어보고 싶은 첫번째 바램으로 시작되었습니다. 사용자가 보기에 가장 UI가 깔끔하면서 가장 한눈에 보기 쉽고 이용하는 서비스 또한 기능도 충실 하다고 생각하여 마켓컬리를 래퍼런스로 구현했습니다.",
     image: marketZero,
     detail: "상세보기",
+    notionUrl:
+      "https://www.notion.so/market-zero-Clone-Project-9c2e3f4e5b6a7b8c9d0e1f2f3g4h5i6j",
   },
   {
     id: 5,
@@ -58,6 +72,8 @@ export const PROJECT_DATA: ProjectData[] = [
       "실시간 가격, 시가총액, 거래량 등 암호화폐 시장 정보를 확인할 수 있는 사이트입니다.",
     image: cryptoTracker,
     detail: "상세보기",
+    notionUrl:
+      "https://www.notion.so/Crypto-Tracker-Project-1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p",
   },
   {
     id: 6,
@@ -66,6 +82,8 @@ export const PROJECT_DATA: ProjectData[] = [
       "간략한 쇼핑몰 웹사이트 입니다. 로그인, 디테일, 상품 검색을 구현했습니다.",
     image: shopping,
     detail: "상세보기",
+    notionUrl:
+      "https://www.notion.so/Shopping-Mall-Project-0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p",
   },
   {
     id: 7,
@@ -74,6 +92,8 @@ export const PROJECT_DATA: ProjectData[] = [
       "현재 위치의 날씨 정보를 불러올 수 있습니다. 다른 지역을 선택하여 해당 지역의 날씨 정보를 볼 수 있습니다.",
     image: weatherApp,
     detail: "상세보기",
+    notionUrl:
+      "https://www.notion.so/Weather-App-Project-9f8e7d6c5b4a3a2b1c0d9e8f7g6h5i4j",
   },
   {
     id: 8,
@@ -81,12 +101,16 @@ export const PROJECT_DATA: ProjectData[] = [
     description: "컴퓨터와 가위바위보 게임을 할 수 있습니다.",
     image: game,
     detail: "상세보기",
+    notionUrl:
+      "https://www.notion.so/Rock-Paper-Scissors-Game-Project-8e7d6c5b4a3a2b1c0d9e8f7g6h5i4j3k",
   },
   {
-    id: 0,
+    id: 9,
     title: "개인 포트폴리오 사이트",
     description: "저만의 포트폴리오 사이트를 제작했습니다.",
     image: game,
     detail: "상세보기",
+    notionUrl:
+      "https://www.notion.so/Portfolio-Site-Project-7d6c5b4a3a2b1c0d9e8f7g6h5i4j3k2l",
   },
 ];

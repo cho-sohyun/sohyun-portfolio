@@ -10,6 +10,7 @@ const ProjectPage = () => {
       className="flex flex-col items-center mt-30 p-8 min-h-screen"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{ duration: 1.2 }}
     >
       <motion.div
@@ -28,7 +29,7 @@ const ProjectPage = () => {
         <p className="mt-4 font-extrabold text-xl">PROJECTS</p>
       </motion.div>
 
-      <div className="flex flex-wrap mt-8 md:w-4/5 ">
+      <div className="flex flex-wrap mt-8 md:w-4/5 gap-6">
         {PROJECT_DATA.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
