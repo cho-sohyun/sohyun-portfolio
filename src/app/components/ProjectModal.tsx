@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { MdClose } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { SiVelog } from "react-icons/si";
+import { useEffect } from "react";
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -20,6 +21,19 @@ const ProjectModal = ({
   githubUrl,
   blogUrl,
 }: ProjectModalProps) => {
+  // 모달 열릴 때 body 스크롤 잠금
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
