@@ -1,12 +1,12 @@
 import { StaticImageData } from "next/image";
-import chalkak from "@/assets/projects/chalkak-main.gif";
-import netflix from "@/assets/projects/netflix-main.gif";
-import subtube from "@/assets/projects/subtube-main.gif";
-import marketZero from "@/assets/projects/marketzero-main.gif";
-import cryptoTracker from "@/assets/projects/cryptoTracker-main.gif";
-import shopping from "@/assets/projects/shopping-main.gif";
-import weatherApp from "@/assets/projects/weatherApp-main.gif";
-import game from "@/assets/projects/game-main.gif";
+import chalkak from "@/assets/projects/project1/chalkak-main.gif";
+import netflix from "@/assets/projects/project3/netflix-main.gif";
+import subtube from "@/assets/projects/project2/subtube-main.gif";
+import marketZero from "@/assets/projects/project4/marketzero-main.gif";
+import cryptoTracker from "@/assets/projects/project5/cryptoTracker-main.gif";
+import shopping from "@/assets/projects/project6/shopping-main.gif";
+import weatherApp from "@/assets/projects/project7/weatherApp-main.gif";
+import game from "@/assets/projects/project8/game-main.gif";
 
 export interface ProjectData {
   id: number;

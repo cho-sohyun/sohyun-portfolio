@@ -60,7 +60,7 @@ const ProjectModal = ({
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
-        className="mt-10 bg-white shadow-xl max-w-5xl w-full h-[100vh] overflow-hidden relative"
+        className=" bg-white shadow-xl max-w-5xl w-full h-[90vh] overflow-hidden relative"
       >
         <iframe
           src={notionUrl}
