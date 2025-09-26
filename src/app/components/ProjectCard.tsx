@@ -14,6 +14,7 @@ const ProjectCard = ({
   notionUrl,
   githubUrl,
   blogUrl,
+  siteUrl,
 }: ProjectCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -51,6 +52,7 @@ const ProjectCard = ({
         notionUrl={notionUrl}
         githubUrl={githubUrl}
         blogUrl={blogUrl}
+        siteUrl={siteUrl}
       />
     </>
   );

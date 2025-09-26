@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { MdClose } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { SiVelog } from "react-icons/si";
+import { FaLink } from "react-icons/fa";
 import { useEffect } from "react";
 
 interface ProjectModalProps {
@@ -12,6 +13,7 @@ interface ProjectModalProps {
   notionUrl: string;
   githubUrl?: string;
   blogUrl?: string;
+  siteUrl?: string;
 }
 
 const ProjectModal = ({
@@ -20,6 +22,7 @@ const ProjectModal = ({
   notionUrl,
   githubUrl,
   blogUrl,
+  siteUrl,
 }: ProjectModalProps) => {
   // 모달 열릴 때 body 스크롤 잠금
   useEffect(() => {
@@ -65,6 +68,16 @@ const ProjectModal = ({
               className="bg-white p-2 rounded-full cursor-pointer"
             >
               <SiVelog size={24} />
+            </a>
+          )}
+          {siteUrl && (
+            <a
+              href={siteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-2 rounded-full cursor-pointer"
+            >
+              <FaLink size={24} />
             </a>
           )}
         </div>

@@ -17,6 +17,7 @@ export interface ProjectData {
   notionUrl: string;
   githubUrl?: string;
   blogUrl?: string;
+  siteUrl?: string;
 }
 
 export const PROJECT_DATA: ProjectData[] = [
@@ -42,7 +43,9 @@ export const PROJECT_DATA: ProjectData[] = [
     image: subtube,
     detail: "상세보기",
     notionUrl:
-      "https://www.notion.so/Subtube-YouTube-8d3e2f3e0f5b4e6f9a1f0e2e2c3b4c5e",
+      "https://quiet-roof-cf4.notion.site/ebd/27a2eaac60aa80f0a577dcca98ded06b?v=27a2eaac60aa8177b61f000caf295c91",
+    githubUrl: "https://github.com/Better-Tmr/SubTube-fe/tree/main",
+    siteUrl: "https://better-tmr.netlify.app/",
   },
 
   {
