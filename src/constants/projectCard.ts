@@ -56,7 +56,10 @@ export const PROJECT_DATA: ProjectData[] = [
     image: netflix,
     detail: "상세보기",
     notionUrl:
-      "https://www.notion.so/Netflix-Clone-Project-6b1f0e3e2f4b4e6f9a1f0e2e2c3b4c5e",
+      "https://quiet-roof-cf4.notion.site/ebd/27a2eaac60aa80b2a475fbf7f502a9a8?v=27a2eaac60aa8153945e000cb7496249",
+
+    githubUrl: "https://github.com/cho-sohyun/netflix-project",
+    siteUrl: "https://netflix-project-kappa.vercel.app/",
   },
   {
     id: 4,
