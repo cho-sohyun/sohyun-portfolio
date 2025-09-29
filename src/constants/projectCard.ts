@@ -69,7 +69,11 @@ export const PROJECT_DATA: ProjectData[] = [
     image: marketZero,
     detail: "상세보기",
     notionUrl:
-      "https://www.notion.so/market-zero-Clone-Project-9c2e3f4e5b6a7b8c9d0e1f2f3g4h5i6j",
+      "https://quiet-roof-cf4.notion.site/ebd/27d2eaac60aa80b2bad3d4f27e12a63c?v=27d2eaac60aa81acb84d000cc55320e4",
+    githubUrl: "https://github.com/cho-sohyun/market-frontend",
+    siteUrl: "https://marketzero-frontend.vercel.app/",
+    blogUrl:
+      "https://velog.io/@whthgus77/JSON-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EA%B2%80%EC%83%89-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0",
   },
   {
     id: 5,
