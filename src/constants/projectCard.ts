@@ -83,7 +83,9 @@ export const PROJECT_DATA: ProjectData[] = [
     image: cryptoTracker,
     detail: "상세보기",
     notionUrl:
-      "https://www.notion.so/Crypto-Tracker-Project-1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p",
+      "https://quiet-roof-cf4.notion.site/ebd/27d2eaac60aa809d9432dd55cc1b813d?v=27d2eaac60aa8157907c000c8c95abf1",
+    githubUrl: "https://github.com/cho-sohyun/Crypto-Tracker.git",
+    siteUrl: "https://crypto-tracker-seven-ashy.vercel.app/",
   },
   {
     id: 6,
@@ -93,7 +95,9 @@ export const PROJECT_DATA: ProjectData[] = [
     image: shopping,
     detail: "상세보기",
     notionUrl:
-      "https://www.notion.so/Shopping-Mall-Project-0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p",
+      "https://quiet-roof-cf4.notion.site/ebd/27d2eaac60aa80f89581c5eb378ff633?v=27d2eaac60aa8186ab29000cdf15a183",
+    githubUrl: "https://github.com/cho-sohyun/shopping-website-project.git",
+    siteUrl: "https://shopping-website-project-kappa.vercel.app/",
   },
   {
     id: 7,
