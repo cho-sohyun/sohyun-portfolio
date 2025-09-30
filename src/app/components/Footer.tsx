@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+// 반응형 수정 필요
+
 const Footer = () => {
   return (
     <footer className="relative w-full h-screen flex flex-col justify-center items-center bg-gray-100 overflow-hidden">

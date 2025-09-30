@@ -7,6 +7,8 @@ import profileImg from "@/assets/profile2.png";
 import bgImg from "@/assets/background.jpg";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
+// intro 반응형 대안
+
 const Intro = () => {
   const [step, setStep] = useState<"intro" | "frontend" | "image">("intro");
 
@@ -27,15 +29,6 @@ const Intro = () => {
       {/* 어두운 오버레이 */}
       <div className="absolute inset-0 bg-black/5"></div>
 
-      {/* 좌측 상단 링크 */}
-      <div className="absolute top-6 left-6 flex space-x-6 text-sm font-medium">
-        <a href="https://github.com" className="border-b-2 border-black">
-          GitHub
-        </a>
-        <a href="https://velog.io" className="border-b-2 border-black">
-          Velog
-        </a>
-      </div>
       <AnimatePresence>
         {/* intro 텍스트 */}
         {(step === "intro" || step === "frontend" || step === "image") && (
@@ -76,7 +69,7 @@ const Intro = () => {
       {/* intro 이미지 */}
       {step === "image" && (
         <motion.div
-          className="absolute bottom-3 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-5 left-1/2 transform -translate-x-1/2"
           initial={{ opacity: 0, scale: 0.8, y: 50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -84,8 +77,8 @@ const Intro = () => {
           <Image
             src={profileImg}
             alt="프로필"
-            width={280}
-            height={280}
+            width={240}
+            height={240}
             className="rounded-full"
           />
         </motion.div>

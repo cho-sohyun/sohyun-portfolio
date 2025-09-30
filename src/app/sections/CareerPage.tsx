@@ -3,6 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CAREER_DATA } from "@/constants/career";
 
+// 반응형 수정 필요
+// 타이틀 여백 조정
+// 타임라인 텍스트 정렬 통일
 const CareerPage = () => {
   return (
     <motion.section

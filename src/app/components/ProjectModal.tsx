@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MdClose } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { SiVelog } from "react-icons/si";
-import { FaLink } from "react-icons/fa";
+import { IoIosLink } from "react-icons/io";
 import { useEffect } from "react";
 
 interface ProjectModalProps {
@@ -51,34 +51,43 @@ const ProjectModal = ({
         </button>
         <div className="flex flex-col gap-2">
           {githubUrl && (
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" bg-white p-2 rounded-full cursor-pointer"
-            >
-              <FaGithub size={24} />
-            </a>
+            <div className="flex flex-col items-center mt-4">
+              <a
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-2 rounded-full cursor-pointer flex items-center justify-center"
+              >
+                <FaGithub size={24} />
+              </a>
+              <span className="text-[10px] mt-1 text-white">GitHub</span>
+            </div>
           )}
           {blogUrl && (
-            <a
-              href={blogUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white p-2 rounded-full cursor-pointer"
-            >
-              <SiVelog size={24} />
-            </a>
+            <div className="flex flex-col items-center mt-2">
+              <a
+                href={blogUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-2 rounded-full cursor-pointer flex items-center justify-center"
+              >
+                <SiVelog size={24} />
+              </a>
+              <span className="text-[10px] mt-1 text-white">관련 블로그</span>
+            </div>
           )}
           {siteUrl && (
-            <a
-              href={siteUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white p-2 rounded-full cursor-pointer"
-            >
-              <FaLink size={24} />
-            </a>
+            <div className="flex flex-col items-center mt-2">
+              <a
+                href={siteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-2 rounded-full cursor-pointer flex items-center justify-center"
+              >
+                <IoIosLink size={24} />
+              </a>
+              <span className="text-[10px] mt-1 text-white">배포 링크</span>
+            </div>
           )}
         </div>
       </div>

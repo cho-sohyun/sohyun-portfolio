@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        {/* <Header /> */}
+        <Header />
         <main>{children}</main>
       </body>
     </html>

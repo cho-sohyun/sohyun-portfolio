@@ -1,38 +1,16 @@
 "use client";
-import { useEffect, useRef } from "react";
+
 import { motion } from "framer-motion";
 import { SKILL_DATA, SkillData } from "@/constants/skill";
 
 const SkillPage = () => {
-  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("fade-in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    itemRefs.current.forEach((el) => {
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   const renderProgressBar = (skill: SkillData, index: number) => (
     <motion.div
-      ref={(el) => {
-        itemRefs.current[index] = el;
-      }}
       key={skill.name}
       className="mb-6"
+      initial={{ opacity: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 0.8, delay: index * 0.1 }}
     >
       <p className="text-sm font-semibold">{skill.name}</p>
       <div className="relative w-full">

@@ -8,10 +8,9 @@ import ProjectPage from "./sections/ProjectPage";
 import Footer from "./components/Footer";
 import BlogPage from "./sections/BlogPage";
 
-// nav 추가 예정 / 깃헙, 블로그 링크 수정
-// 반응형 수정 필요
-// 반응형 career 텍스트 위치 수정 필요
 // section padding 통일 필요
+// home에서 section 대체 고민
+// scroll top 버튼 추가 예정
 
 export default function Home() {
   return (

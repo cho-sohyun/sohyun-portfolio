@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import { PROJECT_DATA } from "@/constants/projectCard";
 import ProjectCard from "../components/ProjectCard";
 
+// 반응형 수정 필요
+// 타이틀 여백 조정
+// 프로젝트 모달 반응형 고려
+
 const ProjectPage = () => {
   return (
     <motion.section

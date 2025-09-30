@@ -3,6 +3,9 @@ import { BLOG_DATA } from "@/constants/blog";
 import { motion } from "framer-motion";
 import BlogCard from "../components/BlogCard";
 
+// 반응형 수정 필요
+// 타이틀 여백 조정
+
 const BlogPage = () => {
   return (
     <motion.section

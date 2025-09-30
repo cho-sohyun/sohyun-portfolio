@@ -2,14 +2,21 @@
 import { motion } from "framer-motion";
 import { AboutContents } from "@/constants/about";
 
+// 반응형 예정
 const About = () => {
   return (
-    <div className="flex flex-col items-center mt-20 min-h-screen ">
+    <motion.section
+      id="about"
+      className="flex flex-col items-center mt-20 min-h-screen"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.2 }}
+    >
       {/* 상단 자기소개 */}
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
         <h3
@@ -40,10 +47,10 @@ const About = () => {
         {AboutContents.map((item, index) => (
           <motion.div
             key={index}
-            className="mt-10 fade-out"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: index * 0.2 }}
+            className="mt-10"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
           >
             <div className="flex items-center">
               <span className="text-2xl font-extrabold mr-1">|</span>
@@ -60,7 +67,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 

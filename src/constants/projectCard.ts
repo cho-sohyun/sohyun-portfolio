@@ -107,7 +107,9 @@ export const PROJECT_DATA: ProjectData[] = [
     image: weatherApp,
     detail: "상세보기",
     notionUrl:
-      "https://www.notion.so/Weather-App-Project-9f8e7d6c5b4a3a2b1c0d9e8f7g6h5i4j",
+      "https://quiet-roof-cf4.notion.site/ebd/27e2eaac60aa80e7b59fcfb175576dba?v=27e2eaac60aa8199abb0000c2c95b97c",
+    githubUrl: "https://github.com/cho-sohyun/toy-project-weatherApp.git",
+    siteUrl: "https://toy-project-weather-app.vercel.app/",
   },
   {
     id: 8,
@@ -116,7 +118,10 @@ export const PROJECT_DATA: ProjectData[] = [
     image: game,
     detail: "상세보기",
     notionUrl:
-      "https://www.notion.so/Rock-Paper-Scissors-Game-Project-8e7d6c5b4a3a2b1c0d9e8f7g6h5i4j3k",
+      "https://quiet-roof-cf4.notion.site/ebd/27e2eaac60aa80db8f2aeeed6ad4c425?v=27e2eaac60aa81acbec3000cf39d668e",
+    githubUrl:
+      "https://github.com/cho-sohyun/toy-project-rockpaperscissors.git",
+    siteUrl: "https://toy-project-rockpaperscissors.vercel.app/",
   },
   {
     id: 9,
