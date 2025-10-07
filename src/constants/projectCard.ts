@@ -7,6 +7,7 @@ import cryptoTracker from "@/assets/projects/project5/cryptoTracker-main.gif";
 import shopping from "@/assets/projects/project6/shopping-main.gif";
 import weatherApp from "@/assets/projects/project7/weatherApp-main.gif";
 import game from "@/assets/projects/project8/game-main.gif";
+import portfolio from "@/assets/projects/project9/portfolio-main.png";
 
 export interface ProjectData {
   id: number;
@@ -127,9 +128,11 @@ export const PROJECT_DATA: ProjectData[] = [
     id: 9,
     title: "개인 포트폴리오 사이트",
     description: "저만의 포트폴리오 사이트를 제작했습니다.",
-    image: game,
+    image: portfolio,
     detail: "상세보기",
     notionUrl:
-      "https://www.notion.so/Portfolio-Site-Project-7d6c5b4a3a2b1c0d9e8f7g6h5i4j3k2l",
+      "https://quiet-roof-cf4.notion.site/ebd/2852eaac60aa8035be51ecfc727f7601?v=2852eaac60aa81e88976000cded9ba9c",
+    githubUrl: "https://github.com/cho-sohyun/sohyun-portfolio.git",
+    siteUrl: "https://cho-sohyun-portfolio.vercel.app/",
   },
 ];

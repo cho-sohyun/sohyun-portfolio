@@ -25,7 +25,7 @@ const LoadingScreen = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-base-200 text-gray-900"
+          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-neutral-900 text-gray-100"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.6 } }}
         >
@@ -35,7 +35,7 @@ const LoadingScreen = () => {
 
             {/* 퍼센트 숫자 */}
             <motion.div
-              className="text-lg font-normal"
+              className="text-lg font-normal text-gray-100"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.2 }}
