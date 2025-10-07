@@ -14,7 +14,14 @@ const BlogCard = ({ title, description, image, link }: BlogCardProps) => {
       />
 
       {/* hover overlay */}
-      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex flex-col justify-start p-4">
+      <div
+        className={`
+      absolute inset-0 bg-black transition-opacity duration-300 flex flex-col justify-start p-4 
+      opacity-0 group-hover:opacity-80 
+      md:opacity-0 md:group-hover:opacity-80
+      sm:opacity-100 sm:group-hover:opacity-100
+    `}
+      >
         <p className="text-white text-start p-2 custom-font text-lg">{title}</p>
         <p className="text-white text-start p-2 font-normal text-sm">
           {description}
