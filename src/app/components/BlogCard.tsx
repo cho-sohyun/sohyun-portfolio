@@ -18,8 +18,8 @@ const BlogCard = ({ title, description, image, link }: BlogCardProps) => {
         className={`
       absolute inset-0 bg-black transition-opacity duration-300 flex flex-col justify-start p-4 
       opacity-0 group-hover:opacity-80 
-      md:opacity-100 md:group-hover:opacity-100
-
+      md:opacity-0 md:group-hover:opacity-80
+      sm:opacity-100 sm:group-hover:opacity-100
     `}
       >
         <p className="text-white text-start p-2 custom-font text-lg">{title}</p>
