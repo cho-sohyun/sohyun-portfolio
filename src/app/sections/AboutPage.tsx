@@ -19,16 +19,16 @@ const About = () => {
         transition={{ duration: 0.8 }}
       >
         <h3
-          className="text-xs sm:text-sm font-light text-gray-500"
+          className="text-xs font-light text-gray-500"
           style={{ letterSpacing: "6px" }}
         >
           ABOUT ME
         </h3>
-        <p className="mt-4 font-extrabold text-lg sm:text-xl custom-font text-gray-900">
+        <p className="mt-4 font-extrabold text-lg sm:text-xl text-gray-900">
           ‘Work-Life Balance’ 보다 몰입할 수 있는 일을 하는 삶을 추구합니다.
         </p>
 
-        <p className="mt-4 text-gray-700 custom-font2 text-sm sm:text-base leading-relaxed">
+        <p className="mt-4 text-gray-700 text-sm sm:text-base leading-relaxed">
           저는 원래 커머스 MD로서 컨텐츠 및 프로모션을 기획하며 쇼핑의 즐거움을
           입력했었습니다. <br />
           개발자와 협업하며 기획한 서비스를 구현하면서 직접적으로 보여지는게
@@ -60,9 +60,7 @@ const About = () => {
               </h4>
             </div>
             <hr className="border-gray-200 my-2" />
-            <p className="text-sm custom-font2 font-normal text-gray-900">
-              {item.content}
-            </p>
+            <p className="text-sm font-normal text-gray-900">{item.content}</p>
           </motion.div>
         ))}
 
