@@ -8,6 +8,7 @@ import ProjectPage from "./sections/ProjectPage";
 import BlogPage from "./sections/BlogPage";
 import { useEffect, useState } from "react";
 import LoadingScreen from "./components/LoadingScreen";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -20,7 +21,11 @@ export default function Home() {
 
   return (
     <main className="relative w-full bg-white">
-      {!isLoading && <LoadingScreen />}
+      {!isLoading && (
+        <div className="fixed inset-0 z-50">
+          <LoadingScreen />
+        </div>
+      )}
       {isLoading && (
         <>
           <Intro />
@@ -29,6 +34,7 @@ export default function Home() {
           <CareerPage />
           <ProjectPage />
           <BlogPage />
+          <Footer />
         </>
       )}
     </main>

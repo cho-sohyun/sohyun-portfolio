@@ -1,6 +1,5 @@
 import "./globals.css";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import ScrollTopButton from "./components/ScrollTopButton";
 
 export const metadata = {
@@ -20,7 +19,6 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
-        <Footer />
         <ScrollTopButton />
       </body>
     </html>
