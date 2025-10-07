@@ -23,6 +23,22 @@ const Footer = () => {
         프론트엔드 개발자로서 문제 해결과 창의적 구현에 최선을 다하며, <br />
         팀과 함께 성장하는 개발자가 되겠습니다.
       </motion.p>
+
+      <div className="overflow-hidden whitespace-nowrap bg-transparent py-1 mt-4">
+        <motion.div
+          className="inline-block text-xs text-gray-300 tracking-widest font-light"
+          animate={{ x: ["100%", "-100%"] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 30,
+            ease: "linear",
+          }}
+        >
+          © 2025 Sohyun Cho Portfolio. All rights reserved. — © 2025 Sohyun Cho
+          Portfolio. All rights reserved. —
+        </motion.div>
+      </div>
     </footer>
   );
 };

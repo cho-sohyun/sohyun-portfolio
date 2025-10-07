@@ -7,9 +7,7 @@ import CareerPage from "./sections/CareerPage";
 import ProjectPage from "./sections/ProjectPage";
 import Footer from "./components/Footer";
 import BlogPage from "./sections/BlogPage";
-
-// section padding 통일 필요
-// scroll top 버튼 추가 예정
+import ScrollTopButton from "./components/ScrollTopButton";
 
 export default function Home() {
   return (
@@ -21,6 +19,7 @@ export default function Home() {
       <ProjectPage />
       <BlogPage />
       <Footer />
+      <ScrollTopButton />
     </main>
   );
 }

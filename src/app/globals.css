@@ -1,8 +1,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html,
 body {
   font-family: "Pretendard", sans-serif;
+
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 @font-face {
