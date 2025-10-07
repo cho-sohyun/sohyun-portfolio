@@ -3,21 +3,18 @@ import { BLOG_DATA } from "@/constants/blog";
 import { motion } from "framer-motion";
 import BlogCard from "../components/BlogCard";
 
-// 반응형 수정 필요
-// 타이틀 여백 조정
-
 const BlogPage = () => {
   return (
     <motion.section
       id="blog"
-      className="flex flex-col items-center mt-30 p-8 min-h-screen"
+      className="flex flex-col items-center mt-16 md:mt-24 p-8 min-h-screen"
       initial={{ opacity: 0 }} // 초기 상태
       whileInView={{ opacity: 1 }}
       exit={{ opacity: 0 }} // 종료 상태
       transition={{ duration: 1.2 }} // 애니메이션 지속 시간
     >
       <motion.div
-        className="md:w-4/5 md:pl-8 mx-auto"
+        className="w-full md:w-4/5 px-2 sm:px-4 md:pl-8"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 100 }}
@@ -29,7 +26,9 @@ const BlogPage = () => {
         >
           write & Read
         </h3>
-        <p className="mt-4 font-extrabold text-xl">BLOG & GITHUB</p>
+        <p className="mt-4 font-extrabold text-xl text-gray-900">
+          BLOG & GITHUB
+        </p>
       </motion.div>
 
       <div className="w-full flex flex-wrap justify-center mt-8 gap-6">
@@ -39,7 +38,7 @@ const BlogPage = () => {
       </div>
 
       <div className="w-full mt-14 text-lg font-medium bg-gray-100 mx-auto p-6 md:w-4/5 md:pl-8">
-        <p className="text-xl text-start">🙋🏻‍♀️ HOW I WORK !</p>
+        <p className="text-xl text-start text-gray-900">🙋🏻‍♀️ HOW I WORK !</p>
         <ul className="mt-4 text-sm text-gray-700">
           <li className="pb-2">
             목표 달성도 중요하지만, 일의 과정에서 재미를 찾는 편이에요.

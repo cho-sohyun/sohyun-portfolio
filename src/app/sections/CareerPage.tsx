@@ -3,25 +3,20 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CAREER_DATA } from "@/constants/career";
 
-// 반응형 수정 필요
-// 타이틀 여백 조정
-// 타임라인 텍스트 정렬 통일
 const CareerPage = () => {
   return (
     <motion.section
       id="career"
-      className="flex flex-col items-center mt-30 p-8 min-h-screen"
+      className="flex flex-col items-center mt-16 md:mt-24 p-8 min-h-screen"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.2 }}
     >
-      {/* Title */}
       <motion.div
-        className="md:w-4/5 md:pl-8"
+        className="w-full md:w-4/5 px-2 sm:px-4 md:pl-8"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 100 }}
         transition={{ duration: 1.2 }}
       >
         <h3
@@ -30,11 +25,11 @@ const CareerPage = () => {
         >
           저는 이런 경력이 있습니다.
         </h3>
-        <p className="mt-4 font-extrabold text-xl">CAREER</p>
+        <p className="mt-4 font-extrabold text-xl text-gray-900">CAREER</p>
       </motion.div>
 
       {/* Timeline */}
-      <div className=" pl-6 flex flex-wrap mt-8">
+      <div className="flex flex-wrap mt-8">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {CAREER_DATA.map((item, index) => (
             <li key={index}>
@@ -44,7 +39,7 @@ const CareerPage = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="h-5 w-5"
+                  className="h-5 w-5 text-gray-700"
                 >
                   <path
                     fillRule="evenodd"
@@ -57,7 +52,7 @@ const CareerPage = () => {
               {/* start → 오른쪽 정렬 */}
               {item.align === "start" && (
                 <motion.div
-                  className="timeline-start mb-10 text-left md:text-right"
+                  className="timeline-start mb-10 text-left md:text-right text-gray-900"
                   initial={{ opacity: 0, x: -100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 100 }}
@@ -80,7 +75,7 @@ const CareerPage = () => {
               {/* end → 왼쪽 정렬 */}
               {item.align === "end" && (
                 <motion.div
-                  className="timeline-end mb-10 text-right md:text-left"
+                  className="timeline-end mb-10 text-left text-gray-900"
                   initial={{ opacity: 0, x: 100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -100 }}

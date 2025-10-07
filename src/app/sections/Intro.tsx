@@ -7,8 +7,6 @@ import profileImg from "@/assets/profile2.png";
 import bgImg from "@/assets/background.jpg";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
-// intro 반응형 대안
-
 const Intro = () => {
   const [step, setStep] = useState<"intro" | "frontend" | "image">("intro");
 
@@ -24,7 +22,11 @@ const Intro = () => {
   return (
     <div
       className="relative w-full h-screen overflow-hidden bg-gray-100"
-      style={{ backgroundImage: `url(${bgImg.src})` }}
+      style={{
+        backgroundImage: `url(${bgImg.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       {/* 어두운 오버레이 */}
       <div className="absolute inset-0 bg-black/5"></div>
@@ -44,7 +46,7 @@ const Intro = () => {
           >
             {step !== "intro" && (
               <motion.h1
-                className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 text-[10rem] font-bold text-white whitespace-nowrap"
+                className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 text-6xl sm:text-8xl md:text-[10rem] font-bold text-white whitespace-nowrap"
                 initial={{ opacity: 0 }}
                 animate={{ y: -70, opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -54,11 +56,10 @@ const Intro = () => {
               </motion.h1>
             )}
 
-            <p className="text-5xl font-normal text-black mb-4">
-              프론트엔드 개발자 <span className="font-bold">조소현</span>
-              입니다.
+            <p className="text-2xl sm:text-3xl md:text-5xl font-normal text-black mb-4">
+              프론트엔드 개발자 <span className="font-bold">조소현</span>입니다.
             </p>
-            <p className="text-md text-black max-w-md mx-auto">
+            <p className="text-xs md:text-[14px] text-gray-800 px-1 md:px-0">
               협력의 힘으로 성장하며, 포기하지 않고 끊임없이 노력하며
               나아갑니다.
             </p>
@@ -84,8 +85,8 @@ const Intro = () => {
         </motion.div>
       )}
       {/* 스크롤 아이콘 */}
-      <div className="absolute bottom-15 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-        <HiOutlineChevronDoubleDown className="w-10 h-10" />
+      <div className="absolute bottom-5 sm:bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+        <HiOutlineChevronDoubleDown className="w-8 h-8 sm:w-10 sm:h-10" />
       </div>
     </div>
   );

@@ -29,6 +29,8 @@ const SkillPage = () => {
               : skill.name === "TailwindCSS"
               ? "progress-success"
               : skill.name === "Figma"
+              ? "progress-neutral"
+              : skill.name === "Git & GitHub"
               ? "progress-error"
               : ""
           }`}
@@ -51,7 +53,7 @@ const SkillPage = () => {
   return (
     <motion.section
       id="skills"
-      className="flex flex-col items-center mt-30 p-8 min-h-screen"
+      className="flex flex-col items-center mt-20 md:mt-30 p-8 min-h-screen"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
@@ -68,7 +70,7 @@ const SkillPage = () => {
         >
           저는 이런 기술들을 다룰 수 있습니다.
         </h3>
-        <p className="mt-4 font-extrabold text-xl">SKILLS</p>
+        <p className="mt-4 font-extrabold text-xl text-gray-900">SKILLS</p>
         <p className="mt-8 text-gray-700 text-sm leading-relaxed">
           HTML과 JavaScript를 시작으로 웹 개발의 기초를 다졌으며, React와
           TypeScript, 다양한 CSS 프레임워크를 활용해 프로젝트를 진행했습니다.
@@ -78,7 +80,7 @@ const SkillPage = () => {
         </p>
       </motion.div>
 
-      <div className="md:w-4/5 md:pl-8 flex flex-wrap mt-8">
+      <div className="md:w-4/5 md:pl-8 flex flex-wrap mt-8 text-gray-900">
         {/* 왼쪽 프로그래스 바 */}
         <motion.div
           className="w-full sm:w-1/2 pr-4"

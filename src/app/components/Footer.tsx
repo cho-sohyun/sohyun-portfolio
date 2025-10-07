@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
+"use client";
 
-// 반응형 수정 필요
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
     <footer className="relative w-full h-screen flex flex-col justify-center items-center bg-gray-100 overflow-hidden">
       <motion.h3
-        className="text-5xl font-extrabold text-gray-800 mb-4"
+        className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-4"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
@@ -15,7 +15,7 @@ const Footer = () => {
       </motion.h3>
 
       <motion.p
-        className="text-lg text-gray-600 text-center max-w-xl"
+        className="text-sm md:text-lg text-gray-600 text-center max-w-xl"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}

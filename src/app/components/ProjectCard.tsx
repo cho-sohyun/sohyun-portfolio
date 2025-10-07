@@ -28,7 +28,7 @@ const ProjectCard = ({
         />
 
         <div className="p-4 bg-white">
-          <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+          <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors text-gray-900">
             {title}
           </h3>
           <p className="text-sm text-gray-600 line-clamp-2 mt-2">
