@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative w-full bg-white">
+    <div className="relative w-full bg-white">
       {!isLoading && (
         <div className="fixed inset-0 z-50">
           <LoadingScreen />
@@ -37,6 +37,6 @@ export default function Home() {
           <Footer />
         </>
       )}
-    </main>
+    </div>
   );
 }
